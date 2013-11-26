@@ -37,12 +37,13 @@ class jwdb(){
     private $statements = array();
 
     public function __construct($host = Null, $dbname = Null, $user = Null, $pass = Null){
-
+        # Define connection settings
         if($host != Null) $host = $_ENV['JWDB_HOST'];
         if($dbname != Null) $host = $_ENV['JWDB_DB'];
         if($user != Null) $host = $_ENV['JWDB_USER'];
         if($pass != Null) $host = $_ENV['JWDB_PASS'];
 
+        # Create connection
         $this->db = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
     }
 
@@ -54,7 +55,6 @@ class jwdb(){
 
     # Create a named entry in our statements array
     public function create_update_statement($statement_name, $sql){
-
         $this->statements[$statement_name] = $this->db->prepare($sql);
     }
 
