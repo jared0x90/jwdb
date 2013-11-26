@@ -3,6 +3,7 @@
 /******************************************************************************
 
 Jared De Blander <jared@deblander.org>
+https://github.com/jared0x90
 
 Overview
 =======================================
@@ -31,7 +32,7 @@ Close curly braces on a line by themself.
 
 ******************************************************************************/
 
-class jwdb(){
+class jwdb{
 
     private $db;
     private $statements = array();
