@@ -3,7 +3,7 @@
 /******************************************************************************
 
 Jared De Blander <jared@deblander.org>
-https://github.com/jared0x90/jwdb/
+https://github.com/jwd83/jwdb/
 
 Overview
 =======================================
